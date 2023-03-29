@@ -1,9 +1,14 @@
 :root {
   --main-text-color: #f7f3f3;
+  --dark-text-color: rgba(122, 36, 36, 0.8);
   --link-color: #eeeaf1;
   --accent-color: #ff8c00;
+  --background-color: rgba(209, 228, 230, 0.545);
 
-  --line-grad: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
+  --line-grad: linear-gradient(
+    rgba(225, 194, 211, 0.3),
+    rgba(225, 194, 211, 0.3)
+  );
   --anim-first: cubic-bezier(0.96, 1.54, 0.51, 1.97);
 }
 h1,
@@ -94,6 +99,8 @@ body {
   );
 }
 .nav-list {
+  padding-left: 20px;
+  padding-right: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -136,7 +143,7 @@ body {
   position: relative;
   max-width: 100%;
   min-height: 530px;
-  background-image: url(/images/1.jpg);
+  background-image: var(--line-grad), url(/images/hero-mob.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -156,4 +163,75 @@ body {
 }
 .hero-title.active {
   opacity: 1;
+}
+.summer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: var(--background-color);
+}
+.summer-title {
+  margin-bottom: 15px;
+
+  color: var(--dark-text-color);
+  font-size: 24px;
+  text-align: center;
+}
+.summer-foto {
+  width: 350px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+/*--------------------adaptive----------------------------*/
+/*------------------mob----------------------------------*/
+@media screen and (max-width: 767px) {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-img {
+      background-image: var(--line-grad), url(../images/hero-mob@2x.jpg);
+    }
+  }
+}
+
+/*-------------------tablet------------------------------*/
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 738px;
+  }
+  .hero-img {
+    min-height: 475px;
+    background-image: var(--line-grad), url(/images/hero-tab.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-img {
+      background-image: var(--line-grad), url(../images/hero-tab@2x.jpg);
+    }
+  }
+  .hero-title {
+    font-size: 24px;
+  }
+}
+
+/*-------------------desctop------------------------------*/
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+  .hero-img {
+    min-height: 722px;
+    background-image: var(--line-grad), url(/images/hero-desctop.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-img {
+      background-image: var(--line-grad), url(../images/hero-desctop@2x.jpg);
+    }
+  }
+  .hero-title {
+    font-size: 32px;
+  }
 }
