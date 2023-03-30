@@ -193,18 +193,18 @@ body {
 }
 .summer-card-item:nth-child(odd) {
   transform: translateX(-120%);
-  /* opacity: 0; */
+  opacity: 0;
   transition: transform 850ms ease, opacity 250ms ease;
 }
 
 .summer-card-item:nth-child(even) {
   transform: translateX(120%);
-  /* opacity: 0; */
+  opacity: 0;
   transition: transform 850ms ease, opacity 250ms ease;
 }
 .summer-card-item.active {
   transform: translateX(0);
-  /* opacity: 1; */
+  opacity: 1;
 }
 
 /*--------------------adaptive----------------------------*/
