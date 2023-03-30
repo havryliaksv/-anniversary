@@ -36,7 +36,7 @@ body {
 }
 .container {
   width: 100%;
-  max-width: 390px;
+  max-width: 410px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -164,6 +164,7 @@ body {
 .hero-title.active {
   opacity: 1;
 }
+/*----------------------SUMMER--------------------------*/
 .summer {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -177,9 +178,31 @@ body {
   text-align: center;
 }
 .summer-foto {
-  width: 350px;
+  max-width: 350px;
   border-radius: 15px;
   overflow: hidden;
+}
+.summer-card-list {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 30px;
+}
+.summer-card-item:nth-child(odd) {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 850ms ease, opacity 250ms ease;
+}
+
+.summer-card-item:nth-child(even) {
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 850ms ease, opacity 250ms ease;
+}
+.summer-card-item.active {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 /*--------------------adaptive----------------------------*/
@@ -197,7 +220,7 @@ body {
 /*-------------------tablet------------------------------*/
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 738px;
+    max-width: 758px;
   }
   .hero-img {
     min-height: 475px;
@@ -213,12 +236,15 @@ body {
   .hero-title {
     font-size: 24px;
   }
+  .summer-card-list {
+    column-gap: 14px;
+  }
 }
 
 /*-------------------desctop------------------------------*/
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1170px;
+    max-width: 1190px;
   }
   .hero-img {
     min-height: 722px;

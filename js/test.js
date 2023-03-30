@@ -1,9 +1,6 @@
-function checkForSpam(message) {
-  let result;
-  result =
-    message.toLowerCase().includes('spam') ||
-    message.toLowerCase().includes('sale');
-  return result;
-}
-
-console.log(checkForSpam('spahjk'));
+let a = 6;
+let b = false;
+let c = '12';
+let d = 1;
+let result = a + d + c + b;
+console.log(result);
