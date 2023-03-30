@@ -150,6 +150,7 @@ body {
 .hero-title {
   position: absolute;
   top: 15%;
+  left: 5%;
   transform: translateY(-50%);
   transform: rotate(-30deg);
   max-width: 300px;
@@ -159,7 +160,7 @@ body {
   line-height: 1.2;
   color: rgba(122, 36, 36, 0.8);
   opacity: 0;
-  transition: opacity 250ms var(--anim-first) 2s;
+  transition: opacity 250ms var(--anim-first) 1s;
 }
 .hero-title.active {
   opacity: 1;
@@ -169,6 +170,7 @@ body {
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: var(--background-color);
+  overflow: hidden;
 }
 .summer-title {
   margin-bottom: 15px;
@@ -190,19 +192,19 @@ body {
   row-gap: 30px;
 }
 .summer-card-item:nth-child(odd) {
-  transform: translateX(-100%);
-  opacity: 0;
+  transform: translateX(-120%);
+  /* opacity: 0; */
   transition: transform 850ms ease, opacity 250ms ease;
 }
 
 .summer-card-item:nth-child(even) {
-  transform: translateX(100%);
-  opacity: 0;
+  transform: translateX(120%);
+  /* opacity: 0; */
   transition: transform 850ms ease, opacity 250ms ease;
 }
 .summer-card-item.active {
   transform: translateX(0);
-  opacity: 1;
+  /* opacity: 1; */
 }
 
 /*--------------------adaptive----------------------------*/
