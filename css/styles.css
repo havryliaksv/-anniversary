@@ -143,7 +143,7 @@ body {
   position: relative;
   max-width: 100%;
   min-height: 530px;
-  background-image: var(--line-grad), url(../images/hero-mob.jpg);
+  background-image: var(--line-grad), url(./images/hero-mob.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
