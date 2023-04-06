@@ -304,6 +304,7 @@ body {
   opacity: 1;
 }
 .autumn-foto {
+  height: 350px;
   position: absolute;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -318,7 +319,7 @@ body {
 
   text-align: center;
 
-  background-color: #e3d3db;
+  background-color: rgba(226, 146, 17, 0.75);
   border: 2px solid var(--dark-text-color);
   border-radius: 15px;
   transform: rotateY(180deg);
@@ -379,6 +380,9 @@ body {
     font-size: 24px;
   }
   .summer-card-list {
+    column-gap: 14px;
+  }
+  .autumn-card-list {
     column-gap: 14px;
   }
 }
