@@ -1,6 +1,10 @@
-let a = 6;
-let b = false;
-let c = '12';
-let d = 1;
-let result = a + d + c + b;
-console.log(result);
+// let arr = [];
+
+// console.log(fillArray(2, 10));
+// console.log(arr);
+
+// function fillArray(min, max) {
+//   for (let i = min; i <= max; i += 2) {
+//     return arr.push(i);
+//   }
+// }

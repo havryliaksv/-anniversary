@@ -249,6 +249,16 @@ body {
   text-align: center;
   transform: rotate(-30deg);
 }
+.summer-foto-card-title::after {
+  margin-left: 20px;
+  transform: translateY(8px);
+  content: '';
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-image: url(../images/smile.svg);
+  background-size: cover;
+}
 
 /*--------------------adaptive----------------------------*/
 /*------------------mob----------------------------------*/
