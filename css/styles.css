@@ -346,9 +346,6 @@ body {
   background-image: url(../images/smile.svg);
   background-size: cover;
 }
-.audio {
-  position: absolute;
-}
 .autumn-video-title {
   margin-top: 40px;
   color: rgb(255, 157, 0);
