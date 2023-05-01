@@ -1,10 +1,5 @@
-// let arr = [];
+const text = document.querySelector('.summer-card-item .summer-foto');
 
-// console.log(fillArray(2, 10));
-// console.log(arr);
-
-// function fillArray(min, max) {
-//   for (let i = min; i <= max; i += 2) {
-//     return arr.push(i);
-//   }
-// }
+console.log(text);
+//console.log(text.classList);
+console.log('test' + text.innerHTML);
